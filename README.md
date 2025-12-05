@@ -5,46 +5,10 @@
   <br>
 </h1>
 
-## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
-___
-## General info
-Good ol' PacMan.
+## Summary
 
-To play, you just need to use the arrow keys on your keyboard ◀️ ▶️ 🔼 🔽 (or with 🇿 🇶 🇸 🇩).
-Avoid traps, eat some super pac gums and chase the 👻 to eat them.
-<br />
-What's the best score you can get ?
-
-Let's find out !
-___
-## Technologies
-
-Made with ❤️ in Java.
-<br />
-Runs using _java.swing_ library and the **Factory**, **State** and **Strategy** design patterns.
+This implementation of Pacman introduces different behaviors for each ghost by giving their own targeting strategy and its own pathfinding algorithm. Blinky uses a full Breadth-First Search pathfinder that converts the map into an 8-pixel tile grid, marks walls as blocked, and computes the shortest path to Pacman by exploring neighbors by layer. Pinky uses a predictive chase method that targets a point several spots ahead of Pacman’s current movement direction, making the behavior feel more anticipatory and aggressive. Inky uses a hybrid system that switches between A* when it is far from Pacman and BFS when it is close. This allows faster long distance navigation while maintaining accurate movement in tighter areas. Clyde follows classic Pacman behavior by chasing Pacman only when far away and retreating to a scatter corner when nearby. The strengths of this design are that it produces intelligent  ghost movements that are aware of the grid. It also avoids walking through walls, and allows a unique strategy for each ghost for Pacman to avoid. The main limitations are that grid-based BFS and A* can be computationally expensive on larger maps, requires maintaining accurate wall grids, and can cause movement to feel robotic compared to smoother vector-based chasing.
 ___
 ## Setup
 
-Prerequisites: You must have [Java](https://www.java.com/en/download/) installed (JRE 16 at least) on your computer.
-
-1. On GitHub, go to the main page of the [repository](https://github.com/lucasvigier/pacman).
-2. Go to the ``Releases`` [section](https://github.com/lucasvigier/pacman/releases/tag/production), and download the file ``pacman.jar``
-3. Run the game with the command :
-
-    ```
-    java -jar pacman.jar
-    ```
-    (*Or just double click the file on Windows*)
-4. Enjoy !
-
-___
-## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/lucasvigier/pacman/blob/main/LICENSE) file for more details.
-
-<h1 align="center">
-  <a href=""><img src="https://res.cloudinary.com/dek4evg4t/image/upload/v1562055192/pac-man-logo-icon-512x512.png" width="50"></a>
-  <br>
-</h1>
+Run GameLauncher.java
