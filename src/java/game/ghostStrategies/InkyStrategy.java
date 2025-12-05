@@ -103,7 +103,7 @@ public class InkyStrategy implements IGhostStrategy {
     }
 
     // ---------- BFS ----------
-
+    // got help from chatgpt
     private Node findNextStepBFS(int startX, int startY, int goalX, int goalY,
                                  boolean[][] blocked, int cols, int rows) {
 
