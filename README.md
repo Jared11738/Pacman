@@ -17,3 +17,8 @@ Run GameLauncher.java
 Research Paper:
 
 Novikov, A., Yakovlev, S., & Gushchin, I. (2025). Exploring the possibilities of MADDPG for UAV swarm control by simulating in Pac-Man environment. Radioelectronic and Computer Systems, 1(113), 327–337. https://doi.org/10.32620/reks.2025.1.21
+
+Original Code:
+
+lucasvigier. (2022). pacman [Computer software]. GitHub. https://github.com/lucasvigier/pacman
+
