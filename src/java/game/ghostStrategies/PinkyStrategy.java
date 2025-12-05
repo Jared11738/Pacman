@@ -6,6 +6,7 @@ import game.entities.Wall;
 import game.entities.ghosts.Ghost;
 
 // A*‐based strategy for Pinky (the pink ghost)
+// got help from chatgpt
 public class PinkyStrategy implements IGhostStrategy {
 
     private Ghost ghost; // Pinky instance
